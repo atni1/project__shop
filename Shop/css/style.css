@@ -258,6 +258,11 @@ a {
     /*background: rgba(244, 244, 244, 0.7);*/
 }
 
+.frame__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
 .frame__left {
     width: 360px;
     margin-bottom: 126px;
@@ -276,6 +281,62 @@ a {
     text-align: center;
     color: #222224;
     font-size: 20px;
+}
+
+.frame__right {
+    width: 557px;
+    padding: 150px 0;
+}
+
+.frame__right p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    color: #222224;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.bolder {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+    white-space: normal;
+}
+
+.frame__right__input {
+    display: flex;
+    justify-content: center;
+}
+
+.frame__input {
+    background: #E1E1E1;
+    padding: 7px 64px 6px 22px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    line-height: 17px;
+    opacity: 0.67;
+    border-top-left-radius: 50px ;
+    border-bottom-left-radius: 50px ;
+    border: none;
+}
+
+.frame__btn {
+    background: #F16D7F;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 17px;
+    border-top-right-radius: 50px ;
+    border-bottom-right-radius: 50px ;
+    width: 85px;
+    height: 36px;
+    padding: 7px 7px 6px 8px;
+    border: none;
 }
 
 .footer {
