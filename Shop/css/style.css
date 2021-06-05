@@ -8,7 +8,7 @@ a {
 }
 
 .text {
-    font-family:Arial, Helvetica, sans-serif
+    font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -168,7 +168,11 @@ a {
     margin-bottom: 30px;
 }
 
-.catalog__items__card h3 {
+.catalog__items__card__text {
+    background: #F8F8F8;
+}
+
+.catalog__items__card__text h3 {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -179,7 +183,7 @@ a {
     
 }
 
-.catalog__items__card p {
+.catalog__items__card__text p {
     font-weight: 300;
     line-height: 17px;
     font-size: 14px;
@@ -251,7 +255,6 @@ a {
 
 .frame {
     background-image: url(../img/frame__bg.jpg);
-    background-size: 100%;
     height: 448px;
     background-repeat: no-repeat;
     width: 100%;
@@ -392,3 +395,107 @@ a {
     font-weight: 700;
     color: #F16D7F;
 }
+
+.filter__sort__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 0 64px 0;
+
+}
+
+details summary {
+    display: block;
+    text-decoration: none;
+}
+
+details[open] {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 360px;
+    max-height: 531px;
+}
+
+.filter {
+    display: flex;
+    justify-content:flex-start;
+    
+}
+
+.filter__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-right: 10px;
+}
+
+.filter__text:hover {
+    font-weight: 400;
+    color: #EF5B70;
+}
+
+.category {
+    padding: 16px 16px 0 16px;
+    margin-bottom: 16px;
+}
+
+summary h2 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    padding-left: 11px;
+    border-left: 5px solid #F16D7F;
+    padding-bottom: 11px;
+    padding-top: 11px;
+
+}
+
+.category__link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    padding-left: 17px;
+}
+
+.category__link__style {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-top: 11px;
+}
+
+.brand {
+    padding: 16px 16px 0 16px;
+    margin-bottom: 16px;
+}
+
+.disigner {
+    padding: 16px 16px 0 16px;
+    margin-bottom: 16px;
+}
+
+.sort__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-right: 10px;
+}
+
+.sort__img {
+    padding-right: 30px;
+}
+
+.products__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
