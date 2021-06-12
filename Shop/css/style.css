@@ -83,28 +83,31 @@ a {
 }
 
 .categories__card {
-    display: flex;
-
+    display:flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
     width: 360px;
     height: 260px;
-    
     margin-bottom: 30px;
+   
 }
 
 .woman {
-    background-image: url(../img/categ__wmn.jpg);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/categ__wmn.jpg);
+    background-color: #000000;
 }
 .man {
-    background-image: url(../img/categ__man.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/categ__man.jpg);
+    background-color: #000000;
 }
 .kids {
-    background-image: url(../img/categ__kids.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/categ__kids.jpg);
+    background-color: #000000;
 }
 .accesories {
-    background-image: url(../img/categ__acceso.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/categ__acceso.jpg);
+    background-color: #000000;
 }
 
 .categories__card:last-child {
@@ -114,13 +117,21 @@ a {
 
 }
 
-.categories__text {
-    font-style: normal;
+.categories__card span {
     font-size: 16px;
-    font-weight: normal;
+    line-height: 19px;
     text-align: center;
-    line-height: 25px;
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.categories__card h2 {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px; 
+    color: #F16D7F;
     
 }
 
@@ -178,9 +189,7 @@ a {
     font-size: 13px;
     color: #000000;
     line-height: 16px;
-
-    margin: 24px 0 13px 18px;
-    
+    margin: 24px 0 13px 18px; 
 }
 
 .catalog__items__card__text p {
@@ -188,7 +197,6 @@ a {
     line-height: 17px;
     font-size: 14px;
     color: #5D5D5D;
-
     margin: 0 28px 18px 18px;
 }
 
@@ -518,3 +526,148 @@ label {
     justify-content: space-between;
 }
 
+.slider {
+    background-color: #F7F7F7;
+    border: 1px solid #EAEAEA;
+    width: 100%;
+    height: 777px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+} 
+
+
+.slider__btn {
+    background: rgba(42, 42, 42, 0.15);
+    padding: 12.65px 17.3px; 
+    position: absolute;
+    cursor: pointer;
+   
+}
+
+.fas {
+    font-size: x-large;
+    font-weight:900;
+}
+
+.slider__btn:hover {
+     color: #F16D7F;
+}
+
+.slider__btn__left {
+    left: 0;
+}
+
+.slider__btn__right {
+    right: 0;
+}
+
+.description {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0;
+    border: 1px solid #EAEAEA;
+    margin-top: -65px;
+    position: relative;
+    background: #FFFFFF;
+    margin-bottom: 129px;
+}
+
+.description h3 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.description h3::after {
+    content: "";
+    display: block;
+    background-color:  #F16D7F;
+    width: 63px;
+    height: 3px;
+    margin: 12px 41.5px;
+    text-align: center;
+}
+
+.description h2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+
+.description p {
+    width: 555px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    margin-bottom: 32px;
+}
+
+.description span {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    text-align: center;
+}
+
+.description span::after {
+    content: "";
+    display: block;
+    width: 641px;
+    height: 0px;
+    border: 1px solid #EAEAEA;
+    margin: 65px 0;
+}
+
+.description__sort {
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+}
+
+.description__sort__text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-right: 9px;
+    font-weight: 400;
+}
+
+.description a {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 56.5px 14px 23.5px;
+    border: 1px solid #FF6A6A;
+    text-decoration: none;
+}
+
+.description a svg {
+    padding-right: 23px;
+}
+
+.description a strong {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    font-weight: 400;
+}
+
+.product {
+    margin-bottom: 129px;
+}
+
+.product__wrap {
+    display: flex;
+    justify-content: space-between;
+}
