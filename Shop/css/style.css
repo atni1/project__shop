@@ -408,31 +408,31 @@ details summary {
     text-decoration: none;
 }
 
-details[open] {
+.filter {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.filter[open] {
     position: absolute;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     width: 360px;
-    max-height: 531px;
 }
 
-.filter {
-    display: flex;
-    justify-content:flex-start;
-    
-}
+.filter[open]>summary {
+    font-weight: 400;
+    color: #EF5B70;
+    outline: none;
+    border: none;
+  }
 
 .filter__text {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    padding-right: 10px;
-}
-
-.filter__text:hover {
-    font-weight: 400;
-    color: #EF5B70;
+   /* padding-right: 10px;*/
 }
 
 .category {
@@ -477,8 +477,8 @@ summary h2 {
 
 .sort__wrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .sort__text {
@@ -491,6 +491,25 @@ summary h2 {
 
 .sort__img {
     padding-right: 30px;
+}
+
+label {
+    display: block;
+}
+
+.sort__size[open] {
+    position: relative;
+}
+
+.sort__size__checkbox {
+    display: block;
+    justify-content:flex-start;
+}
+
+.sort__size__checkbox[open] {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .products__wrap {
