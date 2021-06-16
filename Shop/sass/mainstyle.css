@@ -1,0 +1,225 @@
+.card {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 652px;
+  height: 306px;
+  -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+          filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.card .card__side {
+  width: 100%;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 22px 22px 62px 31px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card__side .card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 57px;
+}
+
+.card .card__side .card__text h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 42px;
+  padding-top: 0;
+}
+
+.card .card__side .card__text p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  padding-bottom: 6px;
+}
+
+.card .card__side .card__text p span {
+  color: #F16D7F;
+}
+
+.card .card__side .card__text p input {
+  width: 30px;
+}
+
+.card .card__side .card__btn .close {
+  border: none;
+  background: #FFFFFF;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.card:first-child {
+  margin-top: 96px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.side .side__left .under__btn {
+  margin-top: 72px;
+  margin-bottom: 128px;
+  width: 652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.side .side__left .under__btn button {
+  border: 1px solid #A4A4A4;
+  padding: 16.5px 40px;
+  background: #FFFFFF;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.side .side__right {
+  width: 360px;
+}
+
+.side .side__right .ship {
+  margin-top: 113px;
+  margin-bottom: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.side .side__right .ship h3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.side .side__right .ship input {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding: 13px 0 16px 17px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+}
+
+.side .side__right .ship button {
+  margin-top: 23px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+  width: 101px;
+  height: 35px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding: 11px 0;
+}
+
+.side .side__right .checkout {
+  padding: 39px 43px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F5F3F3;
+}
+
+.side .side__right .checkout__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.side .side__right .checkout__total span {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-bottom: 12px;
+}
+
+.side .side__right .checkout__total strong {
+  margin-bottom: 21px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.side .side__right .checkout__total strong strong {
+  color: #F16D7F;
+  font-weight: 700;
+}
+
+.side .side__right .checkout__total:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #E2E2E2;
+}
+
+.side .side__right .checkout button {
+  margin-top: 17px;
+  margin-bottom: 42px;
+  padding: 15.5px 37px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
+}
+/*# sourceMappingURL=mainstyle.css.map */
