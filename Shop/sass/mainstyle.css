@@ -79,7 +79,7 @@
   padding: 0;
 }
 
-.side {
+.cart .side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +88,7 @@
           justify-content: space-between;
 }
 
-.side .side__left .under__btn {
+.cart .side .side__left .under__btn {
   margin-top: 72px;
   margin-bottom: 128px;
   width: 652px;
@@ -100,7 +100,7 @@
           justify-content: space-between;
 }
 
-.side .side__left .under__btn button {
+.cart .side .side__left .under__btn button {
   border: 1px solid #A4A4A4;
   padding: 16.5px 40px;
   background: #FFFFFF;
@@ -110,11 +110,11 @@
   color: #000000;
 }
 
-.side .side__right {
+.cart .side .side__right {
   width: 360px;
 }
 
-.side .side__right .ship {
+.cart .side .side__right .ship {
   margin-top: 113px;
   margin-bottom: 51px;
   display: -webkit-box;
@@ -126,14 +126,14 @@
           flex-direction: column;
 }
 
-.side .side__right .ship h3 {
+.cart .side .side__right .ship h3 {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
 }
 
-.side .side__right .ship input {
+.cart .side .side__right .ship input {
   margin-top: 20px;
   font-weight: 300;
   font-size: 13px;
@@ -144,7 +144,7 @@
   background: #FFFFFF;
 }
 
-.side .side__right .ship button {
+.cart .side .side__right .ship button {
   margin-top: 23px;
   border: 1px solid #A4A4A4;
   background: #FFFFFF;
@@ -157,7 +157,7 @@
   padding: 11px 0;
 }
 
-.side .side__right .checkout {
+.cart .side .side__right .checkout {
   padding: 39px 43px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +169,7 @@
   background: #F5F3F3;
 }
 
-.side .side__right .checkout__total {
+.cart .side .side__right .checkout__total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +182,7 @@
           align-items: flex-end;
 }
 
-.side .side__right .checkout__total span {
+.cart .side .side__right .checkout__total span {
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -190,7 +190,7 @@
   margin-bottom: 12px;
 }
 
-.side .side__right .checkout__total strong {
+.cart .side .side__right .checkout__total strong {
   margin-bottom: 21px;
   font-weight: 300;
   font-size: 16px;
@@ -198,12 +198,12 @@
   color: #222222;
 }
 
-.side .side__right .checkout__total strong strong {
+.cart .side .side__right .checkout__total strong strong {
   color: #F16D7F;
   font-weight: 700;
 }
 
-.side .side__right .checkout__total:after {
+.cart .side .side__right .checkout__total:after {
   content: "";
   display: block;
   width: 100%;
@@ -211,7 +211,7 @@
   background: #E2E2E2;
 }
 
-.side .side__right .checkout button {
+.cart .side .side__right .checkout button {
   margin-top: 17px;
   margin-bottom: 42px;
   padding: 15.5px 37px;
@@ -221,5 +221,164 @@
   color: #FFFFFF;
   background: #F16D7F;
   border: none;
+}
+
+.registration .side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration .side .side__left {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration .side .side__left .name {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration .side .side__left .name h3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration .side .side__left .name input {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding: 13px 0 16px 17px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+}
+
+.registration .side .side__left .gender {
+  margin-top: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration .side .side__left .gender input {
+  background: #E5E5E5;
+}
+
+.registration .side .side__left .gender span {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.registration .side .side__left .login {
+  margin-top: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration .side .side__left .login h3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration .side .side__left .login input {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding: 13px 0 16px 17px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+}
+
+.registration .side .side__left .login p {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration .side .side__left button {
+  margin-top: 39px;
+  margin-bottom: 96px;
+  background: #F16D7F;
+  border: none;
+  width: 167px;
+  padding: 16.5px 29px;
+}
+
+.registration .side .side__left button span {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.registration .side .side__right {
+  width: 652px;
+}
+
+.registration .side .side__right h2 {
+  margin-top: 64px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration .side .side__right p {
+  margin-top: 22px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration .side .side__right ul {
+  margin-top: 21px;
+  list-style-image: url(/Shop/img/li.png);
+  padding-left: 28px;
+}
+
+.registration .side .side__right ul li {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 16px;
 }
 /*# sourceMappingURL=mainstyle.css.map */

@@ -220,6 +220,27 @@ a {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    transition: 3s;
+}
+
+.btn:hover {
+    animation: 5s box;
+}
+
+@keyframes box {
+  0% {
+    background: #fff;
+    transform: rotateY(0deg); 
+  }
+  50% {
+    border: none;
+    background: pink;
+    transform: rotateY(1080deg)
+  }
+  100% {
+    background: #fff;
+    transform: rotateY(0deg);
+  }
 }
 
 .feature {
