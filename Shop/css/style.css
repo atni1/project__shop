@@ -1,6 +1,7 @@
 * { 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -36,6 +37,91 @@ a {
 
 .header__right {
     padding: 28px 0 21px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.header__menu {
+    margin-right: 33px;
+}
+
+.header__nav {
+    position: absolute;
+    top: 82px;
+    right: 0;
+    z-index: 10;
+}
+
+.nav {
+    min-width: 232px;
+    padding: 37px 0 0 34px;
+    height: calc(100vh - 70px);
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.nav__wrap {
+    position: relative;
+}
+
+.nav__close {
+    position: absolute;
+    top: -16px;
+    right: 17px;
+}
+
+.nav__close svg {  
+    color: #6F6E6E;
+}
+
+.nav__titel {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.nav__heading {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #F16D7F;
+}
+
+.nav__list {
+    padding-left: 22px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.nav__items {
+    margin-bottom: 11px; 
+}
+
+.nav__items:first-child {
+    margin-top: 12px;
+}
+
+.nav__link {
+    color: #6F6E6E;
+    font-size: 14px;
+    line-height: 17px; 
+    font-weight: 400; 
+}
+
+#burger {
+    display: none;
+}
+  
+#burger:checked~.header__nav {
+    display: block;
+}
+  
+#burger:not(checked)~.header__nav {
+    display: none;
 }
 
 .header__items:not(:last-child) {
@@ -43,7 +129,7 @@ a {
 }
 
 .intro {
-    height: 764px;
+    height: calc(100vh - 70px);
     background-color: #F1E4E6;
     margin-bottom: 64px;
 }
@@ -60,7 +146,7 @@ a {
 }
 
 .intro__text {
-    max-width: 377px;
+    min-width: 35%;
 }
 
 .intro__text h1 {
@@ -258,27 +344,6 @@ a {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
-    transition: 3s;
-}
-
-.btn:hover {
-    animation: 5s box;
-}
-
-@keyframes box {
-  0% {
-    background: #fff;
-    transform: rotateY(0deg); 
-  }
-  50% {
-    border: none;
-    background: pink;
-    transform: rotateY(1080deg)
-  }
-  100% {
-    background: #fff;
-    transform: rotateY(0deg);
-  }
 }
 
 .feature {
@@ -465,9 +530,14 @@ a {
 
 .filter__sort__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 51px 0 64px 0;
 
+}
+
+.filter__sort__wrap:last-child {
+    display: block;
+    justify-content: center;
 }
 
 details summary {
@@ -481,6 +551,7 @@ details summary {
 }
 
 .filter[open] {
+    z-index: 3;
     position: absolute;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -545,7 +616,8 @@ summary h2 {
 .sort__wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    margin-left: 324px; 
 }
 
 .sort__text {

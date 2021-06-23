@@ -74,6 +74,21 @@
   margin-top: 96px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 0 32px;
+  }
+  .intro__wrap {
+    background-size: cover;
+    background-position: center center;
+  }
+  .intro__text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
