@@ -1,133 +1,180 @@
-@media (max-width:768px)  {
+// @media  screen and (max-width:770px)  {
+//     * {
+//         margin: 0;
+//         padding: 0;
+//         box-sizing: border-box;
+//     }
     
-    .header {
-        padding: 0 32px;  
-    }
+//     .header {
+//         padding: 0 32px;  
+//     }
 
-    .nav {
-        height: 100%;
-        // height: calc(100vh - 82px);
-        overflow: scroll;
-    }
+//     .nav {
+//         height: 100%;
+//         // height: calc(100vh - 82px);
+//         overflow: scroll;
+//     }
 
-    .intro__wrap {
-        background-size: contain;
-        background-position: -216px bottom;
-    }
+//     .intro__wrap {
+//         background-size: contain;
+//         background-position: -216px bottom;
+//         padding-left: 50%;
+//     }
 
-    .intro__text {
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 28px;
+//     .intro__text {
+//         font-weight: 400;
+//         font-size: 23px;
+//         line-height: 28px;
        
-    }
+//     }
 
-    .bolt {
-        font-weight:900;
-        font-size: 52px;
-        line-height: 53px;  
-    }
+//     .bolt {
+//         font-weight:900;
+//         font-size: 52px;
+//         line-height: 53px;  
+//     }
 
-    .categories {
-        margin: 0 16px;
-        margin-bottom: 14%;
-    }
+//     .categories {
+//         margin: 0 16px;
+//         margin-bottom: 14%;
+//     }
 
-    .fetured__p {
-        margin-bottom: calc(4% * 2);
-    }
+//     .fetured__p {
+//         margin-bottom: calc(4% * 2);
+//     }
 
-    // .catalog__items__wrap {
-    //     justify-content: center;
-    // } 
+//     .catalog__items__card:nth-child(odd) {
+//         margin-right: 2%;
+//     }
+//     .button {
+//         margin-top: calc(4% * 0.8);
+//         margin-bottom: calc(8% * 0.8);
+//     }
+//     .feature__wrap {
+//         flex-direction: column;
+//         align-items: center;
+//     }
 
-    .catalog__items__card:nth-child(odd) {
-        margin-right: 2%;
-    }
-    .button {
-        margin-top: calc(4% * 0.8);
-        margin-bottom: calc(8% * 0.8);
-    }
-    .feature__wrap {
-        flex-direction: column;
-        align-items: center;
-    }
+//     .feature__items:first-child {
+//         padding-top: 48px;
+//         padding-bottom: 0;
+//     }
 
-    .feature__items:first-child {
-        padding-top: 48px;
-        padding-bottom: 0;
-    }
+//     .feature__items:nth-child(2) {
+//         padding: 48px 0;
+//     }
 
-    .feature__items:nth-child(2) {
-        padding: 48px 0;
-    }
+//     .feature__items:last-child {
+//         padding-top: 0;
+//         padding-bottom: 48px;
+//     }
 
-    .feature__items:last-child {
-        padding-top: 0;
-        padding-bottom: 48px;
-    }
+//     .frame__wrap {
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     // Переделать отступы
+//     // .frame__left {
+//     //     // padding-top: 64px;
+//     //     // margin-bottom: 48px;
+//     // }
+//     // .frame__right {
+//     //     padding: 0 0 140px;
+//     // }
+//     .footer__wrap {
+//         padding: 0 32px;
+//     }
 
-    .frame__wrap {
-        flex-direction: column;
-        align-items: center;
-    }
-    .frame__left {
-        padding-top: 64px;
-        margin-bottom: 48px;
-    }
-    .frame__right {
-        padding: 0 0 140px;
-    }
-    .footer__wrap {
-        padding: 0 32px;
-    }
+//     .breadcrumb__wrap {
+//         padding: 0 16px;
+//     }
 
-    .breadcrumb__wrap {
-        padding: 0 16px;
-    }
+//     .filter__sort__wrap {
+//         padding: 24px 16px 40px; 
+//     }
 
-    .filter__sort__wrap {
-        padding: 24px 16px 40px; 
-    }
+//     .products__wrap {
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//     }
 
-    .products__wrap {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+//     .product__wrap {
+//         justify-content: center;
+//     }
 
-    .product__wrap {
-        justify-content: center;
-    }
+//     .product__wrap article:last-child {
+//         display: none
+//     }
+//     .cart {
+//         .side {
+//             flex-flow: column;
+//             padding: 0 16px;
+//             .side__left {
+//                 width: 100%;
+//                 .card:first-child {
+//                     margin-top: 59px;
+//                 }
 
-    .product__wrap article:last-child {
-        display: none
-    }
-    .cart {
-        .side {
-            flex-flow: column;
-            justify-content: center;
-            margin: 0 16px;
-            .side__right {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-    }
-}
+//             }
+//             .side__right {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 .ship {
+//                     margin: 0;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
-@media (max-width:1100px) {
-    .products__wrap {
-        justify-content: center;
-    } 
+// @media (max-width:1100px) {
+//     .header {
+//         padding: 0 32px;  
+//     }
 
-    .catalog__items__card:nth-child(odd) {
-        margin-right: 2%;
-    }
+//     .products__wrap {
+//         justify-content: center;
+//     } 
 
-    .intro__wrap {
-        background-size: contain;
-        background-position: -205px bottom;
-    }
-}
+//     .catalog__items__card:nth-child(odd) {
+//         margin-right: 2%;
+//     }
+
+//     .intro__wrap {
+//         background-size: contain;
+//         background-position: -200px bottom;
+//     }
+
+
+//     .categories {
+//         margin: 0 16px;
+//         margin-bottom: 14%;
+//     }
+
+//     .feature__wrap {
+//         padding-right: 16px;
+//         padding-left: 16px;
+//     }
+
+//     .footer__wrap {
+//         padding: 0 32px;
+//     }
+
+//     .breadcrumb__wrap {
+//         padding: 0 16px;
+//     }
+
+//     .filter__sort__wrap {
+//         padding: 24px 16px 40px; 
+//     }
+
+//     .product__wrap {
+//         justify-content: center;
+//     }
+
+//     .product__wrap article:last-child {
+//         display: none
+//     }
+// }

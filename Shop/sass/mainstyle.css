@@ -35,7 +35,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 5%;
 }
 
 .card .card__side .card__text h2 {
@@ -63,6 +62,10 @@
   width: 30px;
 }
 
+.card .card__side .card__btn {
+  margin-left: 152px;
+}
+
 .card .card__side .card__btn .close {
   border: none;
   background: #FFFFFF;
@@ -72,140 +75,6 @@
 
 .card:first-child {
   margin-top: 96px;
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 0 32px;
-  }
-  .nav {
-    height: 100%;
-    overflow: scroll;
-  }
-  .intro__wrap {
-    background-size: contain;
-    background-position: -216px bottom;
-  }
-  .intro__text {
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 28px;
-  }
-  .bolt {
-    font-weight: 900;
-    font-size: 52px;
-    line-height: 53px;
-  }
-  .categories {
-    margin: 0 16px;
-    margin-bottom: 14%;
-  }
-  .fetured__p {
-    margin-bottom: calc(4% * 2);
-  }
-  .catalog__items__card:nth-child(odd) {
-    margin-right: 2%;
-  }
-  .button {
-    margin-top: calc(4% * 0.8);
-    margin-bottom: calc(8% * 0.8);
-  }
-  .feature__wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .feature__items:first-child {
-    padding-top: 48px;
-    padding-bottom: 0;
-  }
-  .feature__items:nth-child(2) {
-    padding: 48px 0;
-  }
-  .feature__items:last-child {
-    padding-top: 0;
-    padding-bottom: 48px;
-  }
-  .frame__wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .frame__left {
-    padding-top: 64px;
-    margin-bottom: 48px;
-  }
-  .frame__right {
-    padding: 0 0 140px;
-  }
-  .footer__wrap {
-    padding: 0 32px;
-  }
-  .breadcrumb__wrap {
-    padding: 0 16px;
-  }
-  .filter__sort__wrap {
-    padding: 24px 16px 40px;
-  }
-  .products__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .product__wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .product__wrap article:last-child {
-    display: none;
-  }
-  .cart .side {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 16px;
-  }
-  .cart .side .side__right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media (max-width: 1100px) {
-  .products__wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .catalog__items__card:nth-child(odd) {
-    margin-right: 2%;
-  }
-  .intro__wrap {
-    background-size: contain;
-    background-position: -205px bottom;
-  }
 }
 
 * {
@@ -222,6 +91,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .cart .side .side__left .under__btn {
@@ -244,7 +114,14 @@
   color: #000000;
 }
 
+.cart .side .side__left .under__btn button:hover {
+  background: #F16D7F;
+  border: none;
+  color: #FFFFFF;
+}
+
 .cart .side .side__right .ship {
+  width: 360px;
   margin-top: 113px;
   margin-bottom: 51px;
   display: -webkit-box;
@@ -274,6 +151,10 @@
   background: #FFFFFF;
 }
 
+.cart .side .side__right .ship input:hover {
+  border: 1px solid #000000;
+}
+
 .cart .side .side__right .ship button {
   margin-top: 23px;
   border: 1px solid #A4A4A4;
@@ -285,6 +166,12 @@
   line-height: 13px;
   color: #4A4A4A;
   padding: 11px 0;
+}
+
+.cart .side .side__right .ship button:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  border: none;
 }
 
 .cart .side .side__right .checkout {
@@ -354,6 +241,10 @@
   border: none;
 }
 
+.cart .side .side__right .checkout button:hover {
+  background: #f74d63;
+}
+
 .registration .side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,10 +252,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 96px;
 }
 
 .registration .side .side__left {
-  width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +267,6 @@
 }
 
 .registration .side .side__left .name {
-  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,6 +317,10 @@
   padding-right: 20px;
 }
 
+.registration .side .side__left .gender span:hover {
+  font-size: medium;
+}
+
 .registration .side .side__left .login {
   margin-top: 33px;
   display: -webkit-box;
@@ -465,7 +360,6 @@
 
 .registration .side .side__left button {
   margin-top: 39px;
-  margin-bottom: 96px;
   background: #F16D7F;
   border: none;
   width: 167px;
@@ -479,16 +373,32 @@
   color: #FFFFFF;
 }
 
+.registration .side .side__left button:hover {
+  background: #f74d63;
+}
+
+.registration .side .side__left input:hover {
+  border: 1px solid #000;
+}
+
 .registration .side .side__right {
-  width: 652px;
+  margin-left: 11%;
 }
 
 .registration .side .side__right h2 {
-  margin-top: 64px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+}
+
+@media (max-width: 770px) {
+  .registration .side .side__right h2 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
 }
 
 .registration .side .side__right p {
@@ -497,6 +407,15 @@
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+}
+
+@media (max-width: 770px) {
+  .registration .side .side__right p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
 }
 
 .registration .side .side__right ul {
@@ -511,5 +430,14 @@
   line-height: 29px;
   color: #000000;
   margin-bottom: 16px;
+}
+
+@media (max-width: 770px) {
+  .registration .side .side__right ul li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
 }
 /*# sourceMappingURL=mainstyle.css.map */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="sass/mainstyle.css">
+    <script src="https://kit.fontawesome.com/2a89012097.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -108,9 +109,8 @@
                     <strong>NEW ARRIVALS</strong>
                 </div>
                 <div class="breadcrumb__right">
-                    <a class="breadcrumb__right" href="#">HOME / </a>
-                    <a class="breadcrumb__right" href="#">MAN / </a>
-                    <a class="breadcrumb__right" href="#">NEW ARRIVALS</a>
+                    <a class="breadcrumb__right" href="index.html">HOME / </a>
+                    <a class="breadcrumb__right" href="#">MAN</a>
                 </div>
             </article>
         </section>
@@ -119,9 +119,11 @@
             <div class="container filter__sort__wrap">
                 <div class="filter__wrap">
                     <details class="filter">
-                        <summary>
-                            <strong class="filter__text">FILTER<strong>
-                            <img src="img/filter.png" alt="">
+                        <summary class="filter__text">
+                            FILTER
+                            <svg width="15" height="10" viewBox="0 0 15 10"  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
+                                </svg>
                         </summary>
                         <div class="filter__content">
                             <details class="category">
@@ -159,42 +161,47 @@
                 </div>
                     
                 <div class="sort__wrap">
-                    <details>
-                        <summary>
-                            <span class="sort__text">TRENDING NOW</span>
-                            <img class="sort__img" src="img/selection.png" alt="">
-                        </summary>
-                    </details>
-    
-                    <details class="sort__size">
-                        <summary>
-                            <span class="sort__text">SIZE</span>
-                            <img class="sort__img" src="img/selection.png" alt="">
-                        </summary>
-                        <div class="sort__size__checkbox">
-                            <label for="size-xs">
-                                <input id="size-xs" type="checkbox"> XS
-                            </label>
-                            <label for="size-s">
-                                <input id="size-s" type="checkbox"> S
-                            </label>
-                            <label for="size-m">
-                                <input id="size-m" type="checkbox"> M
-                            </label>
-                            <label for="size-l">
-                                <input id="size-l" type="checkbox"> L
-                            </label>
-                        </div>
-                       
-                    </details>
-    
-                    <details>
-                        <summary>
-                            <span class="sort__text">PRICE</span>
-                            <img src="img/selection.png" alt="">
-                        </summary>
-                    </details>
-    
+                    <div class="sort__sup">
+                        <details class="sort__trend">
+                            <summary>
+                                <span class="sort__text">TRENDING NOW</span>
+                                <img class="sort__img" src="img/selection.png" alt="">
+                            </summary>
+                        </details>
+                    </div>
+                    
+                    <div class="sort__sup">
+                        <details class="sort__size">
+                            <summary>
+                                <span class="sort__text">SIZE</span>
+                                <img class="sort__img" src="img/selection.png" alt="">
+                            </summary>
+                            <form action="" class="sort__size__checkbox">
+                                <label for="size-xs">
+                                    <input id="size-xs" type="checkbox"> XS
+                                </label>
+                                <label for="size-s">
+                                    <input id="size-s" type="checkbox"> S
+                                </label>
+                                <label for="size-m">
+                                    <input id="size-m" type="checkbox"> M
+                                </label>
+                                <label for="size-l">
+                                    <input id="size-l" type="checkbox"> L
+                                </label>
+                            </form>
+                           
+                        </details>
+                    </div>
+                    
+                    <div class="sort__sup">
+                        <details class="sort__price">
+                            <summary>
+                                <span class="sort__text">PRICE</span>
+                                <img src="img/selection.png" alt="">
+                            </summary>
+                        </details>   
+                    </div>
                 </div>
             </div>
             
@@ -218,7 +225,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -240,7 +249,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -262,7 +273,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -284,7 +297,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -306,7 +321,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -328,7 +345,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -350,7 +369,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -372,7 +393,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -394,7 +417,9 @@
                         </div>
                     </div>
                     <div class="catalog__items__card__text">
-                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <a href="product.html">
+                            ELLERY X M'O CAPSULE
+                        </a>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <span class="decor__product">$52.00</span>
                     </div>
@@ -476,10 +501,10 @@
                 </div>
     
                 <div class="social__icons">
-                    <img src="img/facebook.png" alt="">
-                    <img src="img/inst.png" alt="">
-                    <img src="img/pint.png" alt="">
-                    <img src="img/twi.png" alt="">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
         </div>
