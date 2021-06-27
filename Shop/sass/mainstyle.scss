@@ -232,7 +232,7 @@
             }
         }
         .side__right {
-            margin-left: 11%;
+            margin-left: $margin;
             h2 {
                 @include loyalty;
                 
@@ -261,6 +261,80 @@
             }
         }
     }
+}
+
+@media (max-width:450px) {
+    .cart {
+        .breadcrumb__left {
+            padding: 50px 0 69px;
+        }
+        .side { 
+            .side__left {
+                .card {
+                    height: 100%;
+                    margin-bottom: 10%;
+                    .card__img {
+                        display: flex;
+                    }
+                    .card__side {
+                        padding: 13px 12px 37px 17px;
+                        .card__text {
+                            h2 {
+                                font-size: 16px;
+                                line-height: 19px;
+                                margin-bottom: 26px;
+                            }
+                            p {
+                                font-size: 14px;
+                                line-height: 17px;
+                                padding-bottom: 0;
+                            }
+                        }
+                        .card__btn {
+                            margin-left: 0;
+                            .close {
+                                font-size: 16px;
+                                line-height: 19px;  
+                            }
+                        }
+                    } 
+                }
+                .card:first-child {
+                    margin-top: 39px;
+                }
+                .under__btn {
+                    button {
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        padding: 9px;
+                    }
+                }
+            }
+            .side__right {
+                display: flex;
+                flex-flow: column;      
+            }
+        }
+    }
+    .registration {
+        .breadcrumb__left {
+            padding: 60px 0;
+        }
+        .side {
+            display: flex;
+            flex-flow: column;
+            margin: 12% 8px 29%;
+            .side__left {
+                width: 100%;
+                margin-bottom: 12%;
+            }
+            .side__right {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }     
 }
 
 
