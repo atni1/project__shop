@@ -1,19 +1,20 @@
+@import "block/media";
 @import "block/card";
 @import "block/var";
+
 * {
      margin: 0;
      padding: 0;
+     box-sizing: border-box;
  }
 .cart {
     .side {
         display: flex;
         justify-content: space-between;
-    
+        width: 100%;
         .side__left {
             .under__btn {
-                margin-top: 72px;
-                margin-bottom: 128px;
-                width: 652px;
+                margin: 72px 0 128px;
                 display: flex;
                 justify-content: space-between;
                 button {
@@ -25,12 +26,17 @@
                     line-height: 17px;
                     color: #000000;
                 }
-             }
+                button:hover {
+                    background: #F16D7F;
+                    border: none;
+                    color: #FFFFFF;
+                }
+            }
         }
         
         .side__right {
-            width: 360px;
             .ship {
+                width: 360px;
                 margin-top: 113px;
                 margin-bottom: 51px;            
                 display: flex;
@@ -51,6 +57,9 @@
                     border: 1px solid #A4A4A4;
                     background: #FFFFFF;
                 }
+                input:hover {
+                    border: 1px solid #000000;
+                }
                 button {
                     margin-top: 23px;
                     border: 1px solid #A4A4A4;
@@ -62,9 +71,16 @@
                     line-height: 13px;
                     color: #4A4A4A;
                     padding: 11px 0;
-                }       
+                }   
+                button:hover {
+                    background-color: #F16D7F;
+                    color:#FFFFFF;
+                    border: none;;
+                }    
             }
             .checkout {
+                
+                height: 214px;
                 padding: 39px 43px 0;
                 display: flex;            
                 flex-direction: column;          
@@ -110,6 +126,10 @@
                     background: #F16D7F;
                     border: none;
                 }
+                button:hover {
+                    background: #f74d63; 
+                    
+                }
             }
         }
     }
@@ -119,12 +139,12 @@
     .side {
         display: flex;
         justify-content: space-between;
+        margin-top: 64px;
+        margin-bottom: 96px;
         .side__left {
-            width: 360px;
             display: flex;
             flex-direction: column;
             .name {
-                margin-top: 64px;
                 display: flex;
                 flex-direction: column;
                 h3 {
@@ -159,6 +179,9 @@
                     padding-left: 10px;
                     padding-right: 20px;
                 }
+                span:hover {
+                    font-size:medium;
+                }
             }
             .login {
                 margin-top: 33px;
@@ -189,8 +212,7 @@
                 }
             }
             button {
-                margin-top: 39px;
-                margin-bottom: 96px;
+                margin-top: 39px; 
                 background: #F16D7F;
                 border: none;
                 width: 167px;
@@ -202,16 +224,28 @@
                     color: #FFFFFF;   
                 }
             }
+            button:hover {
+                background: #f74d63;
+            }
+            input:hover {
+                border: 1px solid #000;
+            }
         }
         .side__right {
-            width: 652px;
+            margin-left: $margin;
             h2 {
-                margin-top: 64px;
                 @include loyalty;
+                
+                @media (max-width:770px) {
+                    @include loyalty__tablet  
+                }
             }
             p {
                 margin-top: 22px;
                 @include loyalty;
+                @media (max-width:770px) {
+                    @include loyalty__tablet  
+                }
             }
             ul {
                 margin-top: 21px;
@@ -219,11 +253,88 @@
                 padding-left: 28px;
                 li {
                     @include loyalty;
-                    margin-bottom: 16px;   
+                    margin-bottom: 16px;
+                    @media (max-width:770px) {
+                        @include loyalty__tablet  
+                    }   
                 }
             }
         }
     }
+}
+
+@media (max-width:450px) {
+    .cart {
+        .breadcrumb__left {
+            padding: 50px 0 69px;
+        }
+        .side { 
+            .side__left {
+                .card {
+                    height: 100%;
+                    margin-bottom: 10%;
+                    .card__img {
+                        display: flex;
+                    }
+                    .card__side {
+                        padding: 13px 12px 37px 17px;
+                        .card__text {
+                            h2 {
+                                font-size: 16px;
+                                line-height: 19px;
+                                margin-bottom: 26px;
+                            }
+                            p {
+                                font-size: 14px;
+                                line-height: 17px;
+                                padding-bottom: 0;
+                            }
+                        }
+                        .card__btn {
+                            margin-left: 0;
+                            .close {
+                                font-size: 16px;
+                                line-height: 19px;  
+                            }
+                        }
+                    } 
+                }
+                .card:first-child {
+                    margin-top: 39px;
+                }
+                .under__btn {
+                    button {
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        padding: 9px;
+                    }
+                }
+            }
+            .side__right {
+                display: flex;
+                flex-flow: column;      
+            }
+        }
+    }
+    .registration {
+        .breadcrumb__left {
+            padding: 60px 0;
+        }
+        .side {
+            display: flex;
+            flex-flow: column;
+            margin: 12% 8px 29%;
+            .side__left {
+                width: 100%;
+                margin-bottom: 12%;
+            }
+            .side__right {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }     
 }
 
 

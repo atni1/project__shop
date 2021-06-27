@@ -3,14 +3,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 652px;
+  width: 100%;
   height: 306px;
   -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
           filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
 
 .card .card__side {
-  width: 100%;
+  width: 66%;
   background: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +35,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 57px;
 }
 
 .card .card__side .card__text h2 {
@@ -63,6 +62,10 @@
   width: 30px;
 }
 
+.card .card__side .card__btn {
+  margin-left: 152px;
+}
+
 .card .card__side .card__btn .close {
   border: none;
   background: #FFFFFF;
@@ -77,6 +80,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cart .side {
@@ -86,12 +91,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .cart .side .side__left .under__btn {
-  margin-top: 72px;
-  margin-bottom: 128px;
-  width: 652px;
+  margin: 72px 0 128px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,11 +114,14 @@
   color: #000000;
 }
 
-.cart .side .side__right {
-  width: 360px;
+.cart .side .side__left .under__btn button:hover {
+  background: #F16D7F;
+  border: none;
+  color: #FFFFFF;
 }
 
 .cart .side .side__right .ship {
+  width: 360px;
   margin-top: 113px;
   margin-bottom: 51px;
   display: -webkit-box;
@@ -144,6 +151,10 @@
   background: #FFFFFF;
 }
 
+.cart .side .side__right .ship input:hover {
+  border: 1px solid #000000;
+}
+
 .cart .side .side__right .ship button {
   margin-top: 23px;
   border: 1px solid #A4A4A4;
@@ -157,7 +168,14 @@
   padding: 11px 0;
 }
 
+.cart .side .side__right .ship button:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  border: none;
+}
+
 .cart .side .side__right .checkout {
+  height: 214px;
   padding: 39px 43px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,6 +241,10 @@
   border: none;
 }
 
+.cart .side .side__right .checkout button:hover {
+  background: #f74d63;
+}
+
 .registration .side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,10 +252,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 96px;
 }
 
 .registration .side .side__left {
-  width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +267,6 @@
 }
 
 .registration .side .side__left .name {
-  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,6 +317,10 @@
   padding-right: 20px;
 }
 
+.registration .side .side__left .gender span:hover {
+  font-size: medium;
+}
+
 .registration .side .side__left .login {
   margin-top: 33px;
   display: -webkit-box;
@@ -334,7 +360,6 @@
 
 .registration .side .side__left button {
   margin-top: 39px;
-  margin-bottom: 96px;
   background: #F16D7F;
   border: none;
   width: 167px;
@@ -348,16 +373,32 @@
   color: #FFFFFF;
 }
 
+.registration .side .side__left button:hover {
+  background: #f74d63;
+}
+
+.registration .side .side__left input:hover {
+  border: 1px solid #000;
+}
+
 .registration .side .side__right {
-  width: 652px;
+  margin-left: 11%;
 }
 
 .registration .side .side__right h2 {
-  margin-top: 64px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+}
+
+@media (max-width: 770px) {
+  .registration .side .side__right h2 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
 }
 
 .registration .side .side__right p {
@@ -366,6 +407,15 @@
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+}
+
+@media (max-width: 770px) {
+  .registration .side .side__right p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
 }
 
 .registration .side .side__right ul {
@@ -380,5 +430,88 @@
   line-height: 29px;
   color: #000000;
   margin-bottom: 16px;
+}
+
+@media (max-width: 770px) {
+  .registration .side .side__right ul li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+}
+
+@media (max-width: 450px) {
+  .cart .breadcrumb__left {
+    padding: 50px 0 69px;
+  }
+  .cart .side .side__left .card {
+    height: 100%;
+    margin-bottom: 10%;
+  }
+  .cart .side .side__left .card .card__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cart .side .side__left .card .card__side {
+    padding: 13px 12px 37px 17px;
+  }
+  .cart .side .side__left .card .card__side .card__text h2 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 26px;
+  }
+  .cart .side .side__left .card .card__side .card__text p {
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 0;
+  }
+  .cart .side .side__left .card .card__side .card__btn {
+    margin-left: 0;
+  }
+  .cart .side .side__left .card .card__side .card__btn .close {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cart .side .side__left .card:first-child {
+    margin-top: 39px;
+  }
+  .cart .side .side__left .under__btn button {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 9px;
+  }
+  .cart .side .side__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .registration .breadcrumb__left {
+    padding: 60px 0;
+  }
+  .registration .side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 12% 8px 29%;
+  }
+  .registration .side .side__left {
+    width: 100%;
+    margin-bottom: 12%;
+  }
+  .registration .side .side__right {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=mainstyle.css.map */
