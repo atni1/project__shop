@@ -667,7 +667,6 @@ summary h2 {
 .sort__wrap {
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .sort__sup:last-child {
@@ -676,7 +675,6 @@ summary h2 {
 
 .sort__sup {
     margin-right: 30px;
-    
 }
 
 .sort__text {
@@ -687,18 +685,11 @@ summary h2 {
     padding-right: 10px;
 }
 
-.sort__size[open] {
-    z-index: 5;
-    position: absolute;
+.sort__size__checkbox {
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
-.sort__size[open]>summary {
-    display: non;
-}
-
-.sort__size__checkbox {
+    z-index: 3;
+    position: absolute;
     display: flex;
     flex-direction: column;
     font-size: 14px;
